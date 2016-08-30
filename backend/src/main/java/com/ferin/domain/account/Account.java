@@ -96,7 +96,7 @@ public class Account implements Serializable {
 
         public Builder account_limit(String account_limit)
         {
-            this.account_limit = limit;
+            this.account_limit = account_limit;
             return  this;
         }
 
