@@ -14,8 +14,8 @@ public class Account implements Serializable {
     private Client client;
     private String accountNumber;
     private String accountType;
-    private double balance;
-    private double limit;
+    private String balance;
+    private String limit;
     private String pin;
 
 
@@ -44,11 +44,11 @@ public class Account implements Serializable {
         return accountNumber;
     }
 
-    public double getBalance() {
+    public String getBalance() {
         return balance;
     }
 
-    public double getLimit() {
+    public String getLimit() {
         return limit;
     }
 
@@ -66,8 +66,8 @@ public class Account implements Serializable {
         private Client client;
         private String accountNumber;
         private String accountType;
-        private double balance;
-        private double limit;
+        private String balance;
+        private String limit;
         private String pin;
         private Long id;
 
@@ -88,13 +88,13 @@ public class Account implements Serializable {
             return  this;
         }
 
-        public Builder balance(double balance)
+        public Builder balance(String balance)
         {
             this.balance = balance;
             return this;
         }
 
-        public Builder limit(double limit)
+        public Builder limit(String limit)
         {
             this.limit = limit;
             return  this;
@@ -131,35 +131,4 @@ public class Account implements Serializable {
         }
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Account)) return false;
-
-        Account account = (Account) o;
-
-        if (Double.compare(account.balance, balance) != 0) return false;
-        if (Double.compare(account.limit, limit) != 0) return false;
-        if (accountNumber != null ? !accountNumber.equals(account.accountNumber) : account.accountNumber != null)
-            return false;
-        if (accountType != null ? !accountType.equals(account.accountType) : account.accountType != null) return false;
-        if (pin != null ? !pin.equals(account.pin) : account.pin != null) return false;
-        return id != null ? id.equals(account.id) : account.id == null;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result;
-        long temp;
-        result = accountNumber != null ? accountNumber.hashCode() : 0;
-        result = 31 * result + (accountType != null ? accountType.hashCode() : 0);
-        temp = Double.doubleToLongBits(balance);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(limit);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (pin != null ? pin.hashCode() : 0);
-        result = 31 * result + (id != null ? id.hashCode() : 0);
-        return result;
-    }
 }
