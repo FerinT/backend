@@ -5,7 +5,7 @@ import com.ferin.domain.client.Client;
 import javax.persistence.*;
 
 @javax.persistence.Entity
-public class Account {
+public class Account implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
