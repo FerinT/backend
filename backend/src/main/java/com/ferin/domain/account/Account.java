@@ -15,7 +15,7 @@ public class Account implements Serializable {
     private String accountNumber;
     private String accountType;
     private String balance;
-    private String limit;
+    private String account_limit;
     private String pin;
 
 
@@ -27,7 +27,7 @@ public class Account implements Serializable {
         this.accountType = builder.accountType;
         this.balance = builder.balance;
         this.client = builder.client;
-        this.limit = builder.limit;
+        this.account_limit = builder.account_limit;
         this.pin = builder.pin;
         this.id = builder.id;
     }
@@ -49,7 +49,7 @@ public class Account implements Serializable {
     }
 
     public String getLimit() {
-        return limit;
+        return account_limit;
     }
 
     public String getPin() {
@@ -67,7 +67,7 @@ public class Account implements Serializable {
         private String accountNumber;
         private String accountType;
         private String balance;
-        private String limit;
+        private String account_limit;
         private String pin;
         private Long id;
 
@@ -96,7 +96,7 @@ public class Account implements Serializable {
 
         public Builder limit(String limit)
         {
-            this.limit = limit;
+            this.account_limit = limit;
             return  this;
         }
 
@@ -118,7 +118,7 @@ public class Account implements Serializable {
             this.accountNumber = account.accountNumber;
             this.accountType = account.accountType;
             this.balance = account.balance;
-            this.limit = account.limit;
+            this.account_limit = account.limit;
             this.pin = account.pin;
             this.client = account.client;
 
