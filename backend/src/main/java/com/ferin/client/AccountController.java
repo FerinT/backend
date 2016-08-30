@@ -57,7 +57,7 @@ public class AccountController {
                 .accountNumber(account.getAccountNumber())
                 .accountType(account.getAccountType())
                 .balance(account.getBalance())
-                .limit(account.getLimit())
+                .account_limit(account.account_limit())
                 .build();
         accountService.update(updatedAccount);
         return new ResponseEntity<Account>(updatedAccount, HttpStatus.OK);
