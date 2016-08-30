@@ -118,7 +118,7 @@ public class Account implements Serializable {
             this.accountNumber = account.accountNumber;
             this.accountType = account.accountType;
             this.balance = account.balance;
-            this.account_limit = account.limit;
+            this.account_limit = account.account_limit;
             this.pin = account.pin;
             this.client = account.client;
 
