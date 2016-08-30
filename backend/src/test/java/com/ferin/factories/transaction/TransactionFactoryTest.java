@@ -15,7 +15,7 @@ import org.junit.Test;
 import java.util.HashMap;
 
 public class TransactionFactoryTest {
-    @Test
+  /*  @Test
     public void testTransctionChain() throws Exception {
         Transaction transfer = TransactionFactory.getTransaction("transfer");
 
@@ -130,5 +130,5 @@ public class TransactionFactoryTest {
         Transaction deposit = TransactionFactory.getTransaction("deposit");
 
         Assert.assertTrue(deposit.performTransaction(data));
-    }
+    } */
 }
