@@ -15,7 +15,7 @@ public class AccountFactoryImpl implements AccountFactory{
                 .accountNumber(accountDetails.get("accountNumber").toString())
                 .accountType(accountDetails.get("accountType").toString())
                 .balance(accountDetails.get("balance").toString())
-                .limit(accountDetails.get("limit").toString())
+                .account_limit(accountDetails.get("account_limit").toString())
                 .pin(accountDetails.get("pin").toString())
                 .client((Client) accountDetails.get("client"))
                 .id(Long.parseLong(accountDetails.get("id").toString()))
