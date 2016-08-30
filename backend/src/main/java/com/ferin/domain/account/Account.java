@@ -1,7 +1,7 @@
 package com.ferin.domain.account;
 
 import com.ferin.domain.client.Client;
-
+import java.io.Serializable;
 import javax.persistence.*;
 
 @javax.persistence.Entity
