@@ -48,7 +48,7 @@ public class Account implements Serializable {
         return balance;
     }
 
-    public String getLimit() {
+    public String account_limit() {
         return account_limit;
     }
 
@@ -94,7 +94,7 @@ public class Account implements Serializable {
             return this;
         }
 
-        public Builder limit(String limit)
+        public Builder account_limit(String account_limit)
         {
             this.account_limit = limit;
             return  this;
