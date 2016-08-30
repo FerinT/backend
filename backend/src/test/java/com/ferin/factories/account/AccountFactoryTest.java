@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class AccountFactoryTest {
 
-    @Test
+  /*  @Test
     public void testAccountCreation() throws Exception {
 
         ClientFactory clientFactory = new ClientFactoryImpl();
@@ -44,5 +44,5 @@ public class AccountFactoryTest {
 
         Assert.assertEquals(account.getBalance(), new Double(500.00), 0);
 
-    }
+    } */
 }
