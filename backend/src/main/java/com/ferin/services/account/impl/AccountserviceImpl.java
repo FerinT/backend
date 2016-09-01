@@ -4,14 +4,13 @@ import com.ferin.domain.account.Account;
 import com.ferin.repository.account.AccountRepository;
 import com.ferin.services.account.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-/**
- * Created by student on 2016/08/27.
- */
+@Service
 public class AccountserviceImpl implements AccountService{
 
     @Autowired

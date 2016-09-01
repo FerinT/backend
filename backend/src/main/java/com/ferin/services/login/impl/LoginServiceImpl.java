@@ -10,9 +10,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-/**
- * Created by student on 2016/09/01.
- */
+
 @Service
 public class LoginServiceImpl implements LoginService {
 

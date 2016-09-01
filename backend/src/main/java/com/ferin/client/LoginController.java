@@ -12,9 +12,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.Set;
 
-/**
- * Created by student on 2016/09/01.
- */
 @RestController
 public class LoginController {
 
