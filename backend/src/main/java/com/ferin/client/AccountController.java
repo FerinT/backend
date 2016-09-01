@@ -2,6 +2,7 @@ package com.ferin.client;
 
 import com.ferin.domain.account.Account;
 import com.ferin.services.Service;
+import com.ferin.services.account.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -17,8 +18,9 @@ import java.util.Set;
  */
 @RestController
 public class AccountController {
+
     @Autowired
-    private Service accountService;
+    private AccountService accountService;
 
     //------------------- Create a Client --------------------------------------------------------
     @RequestMapping(value = "/account-request/", method = RequestMethod.POST)

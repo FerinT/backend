@@ -2,6 +2,7 @@ package com.ferin.client;
 
 import com.ferin.domain.login.Login;
 import com.ferin.services.Service;
+import com.ferin.services.login.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -13,10 +14,10 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.util.Set;
 
 @RestController
-public class LoginController {
+public class UserLoginController {
 
     @Autowired
-    private Service loginService;
+    private LoginService loginService;
 
     //------------------- Create a Client --------------------------------------------------------
     @RequestMapping(value = "/login-request/", method = RequestMethod.POST)
